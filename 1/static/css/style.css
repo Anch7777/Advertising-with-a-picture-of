@@ -1,55 +1,12 @@
-h1 {
-    color: red;
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
 }
-
-.poem-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.container {
+    max-width: 800px;
+    margin: 0 auto;
 }
-
-.line {
-    display: flex;
-    align-items: center;
-    margin: 5px 0;
-    padding: 10px;
-    border-radius: 5px;
-    font-size: 1.2rem;
-}
-
-.dark-blue-text {
-    background-color: rgba(0, 0, 139, 0.2);
-}
-.dark-blue-text span {
-    color: darkblue;
-}
-
-.green-text {
-    background-color: rgba(0, 128, 0, 0.2);
-}
-.green-text span {
-    color: green;
-}
-
-
-.blue-text {
-    background-color: rgba(0, 0, 255, 0.2);
-}
-.blue-text span {
-    color: blue;
-}
-
-
-.yellow-text {
-    background-color: rgba(255, 255, 0, 0.2);
-}
-.yellow-text span {
-    color: yellow;
-}
-
-.purple-text {
-    background-color: rgba(128, 0, 128, 0.2);
-}
-.purple-text span {
-    color: purple;
+.carousel img {
+    max-height: 500px;
+    object-fit: cover;
 }

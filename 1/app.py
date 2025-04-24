@@ -1,35 +1,15 @@
 from flask import Flask, render_template
 
-
 app = Flask(__name__)
 
-
-@app.route('/')
-def mission_title():
-    return "Миссия Колонизация Марса"
-
-
-@app.route('/index')
-def mission_slogan():
-    return "И на Марсе будут яблони цвести!"
-
-
-@app.route('/promotion')
-def promotion():
-    promotion_text = """
-    Человечество вырастает из детства.<br>
-    Человечеству мала одна планета.<br>
-    Мы сделаем обитаемыми безжизненные пока планеты.<br>
-    И начнем с Марса!<br>
-    Присоединяйся!
-    """
-    return promotion_text
-
-
-@app.route('/promotion_image')
-def promotion_image():
-    return render_template('promotion_image.html')
-
+@app.route('/carousel')
+def index():
+    images = [
+        "img.png",
+        "img_1.png",
+        "img_2.png"
+    ]
+    return render_template('index.html', images=images)
 
 if __name__ == '__main__':
-    app.run(port=8080, host='127.0.0.1')
+    app.run(port=5080, host='127.0.0.1')
